@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var a = document.getElementById("a");
   var b = document.getElementById("b");
@@ -22,7 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("innerFuncOne: ", this);
     }
     innerFuncOne();
-
+    
+    // zeby this wskazywało poprawnie, dodałbym w wywołaniu
+    //innerFuncOne(this);
+    //a w metodzie odbierałbym przekazany element
   });
 
 })
